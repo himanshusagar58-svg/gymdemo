@@ -16,7 +16,7 @@ const load = s => new Promise(res => {
   };
   im.src = s;
 });
-Promise.all([Promise.all(srcs.map(load)), Promise.race([document.fonts.ready, new Promise(r => setTimeout(r, 2500))])])
+Promise.all([Promise.all(srcs.map(load)), Promise.race([Promise.all(["800 1em Big Shoulders Display", "900 1em Big Shoulders Display", "400 1em Barlow", "500 1em Barlow"].map(f => document.fonts.load(f))), new Promise(r => setTimeout(r, 2500))])])
   .then(([imgs]) => { start(imgs.slice(0, N)); setTimeout(() => body.classList.add('ready'), 300); });
 
 function start(frames) {
