@@ -17,8 +17,7 @@ h2{font-size:clamp(40px,5.4vw,84px);margin-bottom:5vh}
 .pre-bar{position:absolute;inset:auto 0 0;height:4px;background:var(--line)}
 .pre-bar i{display:block;height:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .2s linear}
 
-.top{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:8px 5vw;background:rgba(255, 255, 255, 0);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px)}
-.mark{font:800 26px var(--d);text-decoration:none}
+.top{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:8px 5vw;background:rgba(7, 7, 7, 0.17);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 .burger{width:44px;height:44px;margin-right:-10px;display:grid;align-content:center;justify-items:center;gap:6px;background:none;border:0;cursor:pointer;transition:transform .16s var(--ease)}
 .burger:active{transform:scale(.94)}
 .burger i{display:block;width:24px;height:2px;background:var(--ink);transition:transform .25s var(--ease),opacity .15s}
